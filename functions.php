@@ -3,6 +3,10 @@
 /* stylesheets */
 function load_stylesheets()
 {
+
+    wp_register_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', array(), false, 'all');
+    wp_enqueue_style('bootstrap');
+
     wp_register_style('style', get_template_directory_uri() . '/style.css', array(), false, 'all');
     wp_enqueue_style('style');
 }
