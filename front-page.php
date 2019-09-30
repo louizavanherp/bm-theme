@@ -4,18 +4,39 @@
 
     <div class="container">
 
-        <?php $intro = get_field('intro_');?>
-        <section class="intro">
-            <div class="intro__img">
-                <img src="" alt="">
-            </div>
+        
 
-            <div class="intro__copy">
-                <h1 class="intro__heading"><?php echo $intro['large_title_']; ?></h1>
-                <p class="intro__txt"><?php echo $intro['main_text_']; ?></p>
-                <img src="" alt="" class="intro__signature">
-            </div>
-        </section>
+
+        <div class="container">
+
+            <?php $intro = get_field('intro');?>
+            <section class="intro row">
+                <div class="intro__img col">
+
+                    <?php 
+
+                    if( !empty($intro['image']) ): ?>
+
+                        <img src="<?php echo $intro['image']['sizes']['medium']; ?>" alt="<?php echo $intro['image']['alt']; ?>" />
+
+                    <?php endif; ?>
+
+                </div>
+
+                <div class="intro__copy col">
+                    <h1 class="intro__heading"><?php echo $intro['large_title']; ?></h1>
+                    <p class="intro__txt"><?php echo $intro['main_text']; ?></p>
+                    <?php 
+
+                    if( !empty($intro['signature']) ): ?>
+
+                        <img src="<?php echo $intro['signature']['sizes']['thumbnail']; ?>" alt="<?php echo $intro['signatre']['alt']; ?>" />
+
+                    <?php endif; ?>
+                </div>
+            </section>
+
+        </div>
 
     </div>
 
