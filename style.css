@@ -13,6 +13,91 @@ Author: Louiza Vanherp  */
 
 body {
     box-sizing: border-box;
-    padding: 3rem;
 }
+
+section{
+    padding: 3em;
+}
+
+/*** QUOTES ***/
+
+#i1, #i2, #i3, #i4, #i5{ display: none;}
+
+.testimonials{
+		margin: 0 auto;
+		margin-top: 1em;
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding: 10em 0;
+	    user-select: none;
+		background-color: #CCD6D2;
+	}
+
+	.testimonials .slide_quotes{
+        width: 75%;
+    }
+    
+    .testimonials .slide_quotes p{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align:center;
+    }
+
+	 .prev, .next{
+		width: 12%;
+		position: absolute;
+		color:#4B4B4B;
+		z-index: 99;
+        cursor: pointer;
+    }
+
+    .prev{left:0;}
+
+    .next{right:0;}
+
+    .prev p, .next p {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        line-height: 0.1em;
+        margin: 10px 0 20px;
+      }
+
+    .prev p:after, .next p:after {
+        z-index: -1;
+        position: absolute;
+        content: '';
+        width: 50%;
+        border-bottom: 1px solid #4b4b4b;
+    }
+
+    .prev p:after{
+        right: 0;
+    }
+
+    .next p:after{
+        left:0;
+    }
+
+    .prev p span, .next p span {
+        background: #CCD6D2;
+        padding: 0 10px;
+    }
+  
+    
+
+.slide_quotes{z-index: -1;}
+
+	#i1:checked ~ #one  ,
+	#i2:checked ~ #two  ,
+	#i3:checked ~ #three,
+	#i4:checked ~ #four ,
+	#i5:checked ~ #five 
+	{z-index: 9; animation: scroll 1s ease-in-out;}
+
+
+
+
 

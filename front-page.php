@@ -115,6 +115,84 @@
                     </div>
                 </div>
             </section>
+            
+            <?php $quotes = get_field('quotes');?>
+            <section class="testimonials">
+                <div class="row justify-content-center">
+
+                    <input type="radio" id="i1" name="quotes" checked />
+                    <input type="radio" id="i2" name="quotes" />
+                    <input type="radio" id="i3" name="quotes" />
+                    <input type="radio" id="i4" name="quotes" />
+                    <input type="radio" id="i5" name="quotes" />	
+                    
+                    <div class="slide_quotes" id="one">			
+                            
+                        <p>"<?php echo $quotes['quote_1'];?>"</p>
+                                
+                        <label class="prev" for="i5">
+                            <p><span>PREV</span></p> 
+                        </label>
+                        <label class="next" for="i2">
+                            <p><span>NXT</span></p> 	
+                        </label>
+                    </div>
+                    
+                    <div class="slide_quotes" id="two">
+                        
+                        <p>"<?php echo $quotes['quote_2'];?>"</p>
+                            
+                        <label class="prev" for="i1">
+                            <p><span>PREV</span></p> 
+                        </label>
+                        <label class="next" for="i3">
+                            <p><span>NXT</span></p> 	
+                        </label>
+                    </div>
+                            
+                    <div class="slide_quotes" id="three">
+
+                        <p>"<?php echo $quotes['quote_3'];?>"</p>
+
+                        <label class="prev" for="i2">
+                            <p><span>PREV</span></p> 
+                        </label>
+                        <label class="next" for="i4">
+                            <p><span>NXT</span></p> 	
+                        </label>
+
+                    </div>
+
+                    <div class="slide_quotes" id="four">
+
+                        <p>"<?php echo $quotes['quote_4'];?>"</p>
+                            
+                        <label class="prev" for="i3">
+                            <p><span>PREV</span></p> 
+                        </label>
+                        <label class="next" for="i5">
+                            <p><span>NXT</span></p> 	
+                        </label>
+
+                    </div>
+
+                    <div class="slide_quotes" id="five">
+
+                        <p>"<?php echo $quotes['quote_5'];?>"</p>	
+                            
+                        <label class="prev" for="i4">
+                            <p><span>PREV</span></p> 
+                        </label>
+                        <label class="next" for="i1">
+                            <p><span>NXT</span></p> 	
+                        </label>
+
+
+                    </div>
+                </div>
+            </section>
+
+
 
 
 
