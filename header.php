@@ -5,7 +5,7 @@
 </head>
 <body <?php body_class();?>>
 
-<header>
+<header class="navbar fixed-top">
 
     <?php wp_nav_menu(
         array(
