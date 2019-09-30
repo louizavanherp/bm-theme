@@ -36,6 +36,35 @@
                 </div>
             </section>
 
+            <?php $services = get_field('services');?>
+            <section class="services">
+                <h1><?php echo $services['title']; ?></h1>
+
+                <div class="row">
+                    <div class="col">
+                        <h2><?php echo $services['subtitle_1']; ?></h2>
+                        <?php echo $services['subtext_1']; ?>
+                    </div>
+
+                    <div class="col">
+                        <h2><?php echo $services['subtitle_2']; ?></h2>
+                        <?php echo $services['subtext_2']; ?>
+                    </div>
+
+                    <div class="col">
+                        <h2><?php echo $services['subtitle_3']; ?></h2>
+                        <?php echo $services['subtext_3']; ?>
+                    </div>
+
+                    <div class="col">
+                        <h2><?php echo $services['subtitle_4']; ?></h2>
+                        <?php echo $services['subtext_4']; ?>
+                        <?php echo $services['subtext_4_cta']; ?>
+                    </div>
+
+                </div>
+            </section>
+
         </div>
 
     </div>
