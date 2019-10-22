@@ -37,3 +37,9 @@ register_nav_menus(
         'footer-menu' => __('Footer Menu', 'theme'),
     )
 );
+
+/*google fonts*/
+function add_google_fonts() {
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap', false );
+    }
+    add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
