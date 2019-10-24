@@ -19,7 +19,7 @@
                         </div>
 
                         <div class="about__text col-12 col-md-6 my-auto">
-                            <h1 class="about__heading"><?php echo $intro['large_title']; ?></h1>
+                            <h1 class="heading-primary about__heading"><?php echo $intro['large_title']; ?></h1>
                             <p class="about__paragraph paragraph"><?php echo $intro['main_text']; ?></p>
                             <a class="btn btn--outline" href="<?php echo $intro['cta_button_link'] ?>"><?php echo $intro['cta_button_text'];?></a>
                         </div>
@@ -36,28 +36,31 @@
             <?php $services = get_field('services');?>
             <section class="services" id="services">
                 <div class="container">
-                    <h1 class="serivces__title"><?php echo $services['title']; ?></h1>
+                    <h1 class="heading-primary services__title"><?php echo $services['title']; ?></h1>
 
                     <div class="row services__content">
-                        <div class="col mr-5">
-                            <h2><?php echo $services['subtitle_1']; ?></h2>
+                        <div class="services__service col-12 col-sm-6 col-lg-3">
+                            <h2 class="heading-secondary heading-secondary--underline"><?php echo $services['subtitle_1']; ?></h2>
                             <p><?php echo $services['subtext_1']; ?></p>
+                            <a class="link" href="<?php echo $services['cta_1'] ?>"><?php echo $services['cta_1_text'] ?><span>></span></a>
                         </div>
 
-                        <div class="col mr-5">
-                            <h2><?php echo $services['subtitle_2']; ?></h2>
+                        <div class="services__service col-12 col-sm-6 col-lg-3">
+                            <h2 class="heading-secondary heading-secondary--underline"><?php echo $services['subtitle_2']; ?></h2>
                             <p><?php echo $services['subtext_2']; ?></p>
+                            <a class="link" href="<?php echo $services['cta_2'] ?>"><?php echo $services['cta_2_text'] ?><span>></span></a>
                         </div>
 
-                        <div class="col mr-5">
-                            <h2><?php echo $services['subtitle_3']; ?></h2>
+                        <div class="services__service col-12 col-sm-6 col-lg-3">
+                            <h2 class="heading-secondary heading-secondary--underline"><?php echo $services['subtitle_3']; ?></h2>
                             <p><?php echo $services['subtext_3']; ?></p>
+                            <a class="link" href="<?php echo $services['cta_3'] ?>"><?php echo $services['cta_3_text'] ?><span>></span></a>
                         </div>
 
-                        <div class="col box">
-                            <h2><?php echo $services['subtitle_4']; ?></h2>
-                            <p><?php echo $services['subtext_4']; ?>
-                            <br><?php echo $services['subtext_4_cta']; ?></p>
+                        <div class="services__service col-12 col-sm-6 col-lg-3 box">
+                            <h2 class="heading-secondary"><?php echo $services['subtitle_4']; ?></h2>
+                            <p><?php echo $services['subtext_4']; ?></p>
+                            <a class="link" href="<?php echo $services['cta_4'] ?>"><?php echo $services['cta_4_text'] ?><span>></span></a>
                         </div>
 
                     </div>

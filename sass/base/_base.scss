@@ -1,3 +1,13 @@
+/***** GENERAL *****/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/***** TYPOGRAPHYY ****/
 html {
     // This defines what 1rem is
     font-size: 62.5%; //1rem = 10px
@@ -15,15 +25,6 @@ html {
     }
 }
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-
 body {
     box-sizing: border-box;
     font-family: "Roboto", "sans-serif";
@@ -31,13 +32,40 @@ body {
     font-size: 1.6rem;
 }
 
-h1{
+.heading-primary{
     font-family: "Poppins", "sans-serif";
     font-weight: 700; //bold
     font-size: 3.5rem;
 }
 
-h2{
+.heading-secondary{
+    font-family: "Poppins", "sans-serif";
     font-size: 2rem;
     font-weight: 500; //medium
+    line-height: 3rem;
+}
+
+.heading-secondary--underline{
+    position: relative;
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+
+.heading-secondary--underline::after{
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 2.5px;
+    bottom: 0;
+    left: 0;
+    border-radius:5px;
+    background: $color-black;
+}
+
+/***** BOX ****/
+.box{
+    border: 2px solid $color-black;
+    height: 100%;
+    padding: 3rem;
 }

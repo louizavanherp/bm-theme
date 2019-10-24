@@ -1,0 +1,19 @@
+.services{
+    padding:$padding-medium;
+
+    &__service{
+        
+        margin-top: 5rem;
+
+        &:not(:last-child){
+            padding-right: 8rem;
+        }
+        
+        p{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+
+}
