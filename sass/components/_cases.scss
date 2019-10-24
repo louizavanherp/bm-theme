@@ -1,0 +1,28 @@
+.cases {
+  padding: $padding-large;
+  @include respond(tab-land) {
+    padding: $padding-medium;
+  }
+
+  &__case {
+    @include respond(tab-port) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      max-width: 40rem;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    .link {
+      @include respond(tab-port) {
+        font-size: 1rem;
+      }
+    }
+  }
+}

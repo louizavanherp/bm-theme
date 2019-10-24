@@ -2,70 +2,77 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 /***** TYPOGRAPHYY ****/
 html {
-    // This defines what 1rem is
-    font-size: 62.5%; //1rem = 10px
+  // This defines what 1rem is
+  font-size: 62.5%; //1rem = 10px
 
-    @include respond(tab-land){ //width < 900px?
-        font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
-    }
+  @include respond(tab-land) {
+    //width < 900px?
+    font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
+  }
 
-    @include respond(tab-port){ //width < 600px?
-        font-size: 50%; // 1rem = 8px, 8/16 = 50%
-    }
+  @include respond(tab-port) {
+    //width < 600px?
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
 
-    @include respond(big-desktop){ //width > 1800px?
-        font-size: 75%; // 1rem = 12px, 12/16 = 75%
-    }
+  @include respond(big-desktop) {
+    //width > 1800px?
+    font-size: 75%; // 1rem = 12px, 12/16 = 75%
+  }
 }
 
 body {
-    box-sizing: border-box;
-    font-family: "Roboto", "sans-serif";
-    color: $color-black;
-    font-size: 1.6rem;
+  box-sizing: border-box;
+  font-family: "Roboto", "sans-serif";
+  color: $color-black;
+  font-size: 1.6rem;
 }
 
-.heading-primary{
-    font-family: "Poppins", "sans-serif";
-    font-weight: 700; //bold
-    font-size: 3.5rem;
+.heading-primary {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 700; //bold
+  font-size: 3.5rem;
 }
 
-.heading-secondary{
-    font-family: "Poppins", "sans-serif";
-    font-size: 2rem;
-    font-weight: 500; //medium
-    line-height: 3rem;
+.heading-secondary {
+  font-family: "Poppins", "sans-serif";
+  font-size: 2rem;
+  font-weight: 500; //medium
+  line-height: 3rem;
 }
 
-.heading-secondary--underline{
-    position: relative;
-    padding-bottom: 1.5rem;
-    margin-bottom: 3rem;
-
+.heading-secondary--underline {
+  position: relative;
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.heading-secondary--underline::after{
-    content: "";
-    position: absolute;
-    width: 4rem;
-    height: 2.5px;
-    bottom: 0;
-    left: 0;
-    border-radius:5px;
-    background: $color-black;
+.heading-secondary--underline::after {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  background: $color-black;
 }
 
 /***** BOX ****/
-.box{
-    border: 2px solid $color-black;
-    height: 100%;
-    padding: 3rem;
+.box {
+  border: 2px solid $color-black;
+  height: 100%;
+  padding: 3rem;
+}
+
+/***** LINE ****/
+.line {
+  border-top: 2px solid $color-black;
 }

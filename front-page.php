@@ -35,7 +35,7 @@
 
             <?php $services = get_field('services');?>
             <section class="services" id="services">
-                <div class="container">
+                <div class="container-fluid">
                     <h1 class="heading-primary services__title"><?php echo $services['title']; ?></h1>
 
                     <div class="row services__content">
@@ -69,68 +69,77 @@
 
             <?php $cases = get_field('cases');?>
             <section class="cases">
-                <div class="container">
-                    <div class="row case">
-                        <div class="col">
-                        <?php if( !empty($cases['image_1']) ): ?>
-                        <img src="<?php echo $cases['image_1'] ?>" alt="<?php echo $cases['image_1']['alt']; ?>" />
-                        <?php endif; ?>
-                        </div>
-                        <div class="col-md-auto">
-                            <hr class="line">
-                        </div>
-                        <div class="col col-lg-2 cases__content md-pt-10">
-                        <?php if( !empty($cases['title_1']) ): ?>
-                            <p class="cases__title"><?php echo $cases['title_1'] ?></p>
-                        <?php endif; ?>
-                        <?php if( !empty($cases['link_1']) || !empty($cases['link_text']) ): ?>
-                            <a class="cases__more-link" href="<?php echo $cases['link_1'] ?>"><?php echo $cases['link_text'];?></a>
-                        <?php endif; ?>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col cases__content">
-                        <?php if( !empty($cases['title_2']) ): ?>
-                            <p class="cases__title"><?php echo $cases['title_2'] ?></p>
-                        <?php endif; ?>
-                        <?php if( !empty($cases['link_2']) || !empty($cases['link_text']) ): ?>
-                            <a class="cases__more-link" href="<?php echo $cases['link_2'] ?>"><?php echo $cases['link_text'];?></a>
-                        <?php endif; ?>
+                <div class="container-fluid">
+                    <div class="row cases__case">
+                        <div class="col-8 col-md-5 col-lg-4 my-auto">
+                            <div class="cases__image">
+                                <?php if( !empty($cases['image_1']) ): ?>
+                                <img src="<?php echo $cases['image_1'] ?>" alt="<?php echo $cases['image_1']['alt']; ?>" />
+                                <?php endif; ?>
+                            </div>
                         </div>
 
-                        <div class="col-md-auto">
+                        <div class="col-md-5 col-lg-6 my-auto d-none d-md-block">
                             <hr class="line">
                         </div>
 
-                        <div class="col">
-                        <?php if( !empty($cases['image_2']) ): ?>
-                        <img src="<?php echo $cases['image_2'] ?>" alt="<?php echo $cases['image_2']['alt']; ?>" />
-                        <?php endif; ?>
+                        <div class="col-4 col-md-2 my-auto cases__content">
+                            <?php if( !empty($cases['title_1']) ): ?>
+                                <h2 class="cases__title"><?php echo $cases['title_1'] ?></h2>
+                            <?php endif; ?>
+                            <?php if( !empty($cases['link_1']) || !empty($cases['link_text']) ): ?>
+                                <a class="link" href="<?php echo $cases['link_1'] ?>"><?php echo $cases['link_text'];?><span>></span></a>
+                            <?php endif; ?>
                         </div>
-
-    
                     </div>
 
-                    <div class="row">
-                        <div class="col">
-                        <?php if( !empty($cases['image_3']) ): ?>
-                        <img src="<?php echo $cases['image_3']?>" alt="<?php echo $cases['image_3']['alt']; ?>" />
-                        <?php endif; ?>
+                    <div class="row cases__case">
+
+                            <div class="col-4 col-md-2 my-auto cases__content">
+                                <?php if( !empty($cases['title_1']) ): ?>
+                                    <h2 class="cases__title"><?php echo $cases['title_2'] ?></h2>
+                                <?php endif; ?>
+                                <?php if( !empty($cases['link_1']) || !empty($cases['link_text']) ): ?>
+                                    <a class="link" href="<?php echo $cases['link_2'] ?>"><?php echo $cases['link_text'];?><span>></span></a>
+                                <?php endif; ?>
+                            </div>
+
+                            <div class="col-md-5 col-lg-6 my-auto d-none d-md-block">
+                                <hr class="line">
+                            </div>
+
+                            <div class="col-8 col-md-5 col-lg-4 my-auto">
+                                <div class="cases__image">
+                                    <?php if( !empty($cases['image_2']) ): ?>
+                                    <img src="<?php echo $cases['image_2'] ?>" alt="<?php echo $cases['image_2']['alt']; ?>" />
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="row cases__case">
+                        <div class="col-7 col-md-5 col-lg-4 my-auto">
+                            <div class="cases__image">
+                                <?php if( !empty($cases['image_3']) ): ?>
+                                <img src="<?php echo $cases['image_3'] ?>" alt="<?php echo $cases['image_3']['alt']; ?>" />
+                                <?php endif; ?>
+                            </div>
                         </div>
-                        <div class="col-md-auto">
+
+                        <div class="col-md-5 col-lg-6 my-auto d-none d-md-block">
                             <hr class="line">
                         </div>
-                        <div class="col col-lg-2 cases__content">
-                        <?php if( !empty($cases['title_3']) ): ?>
-                            <p class="cases__title"><?php echo $cases['title_3'] ?></p>
-                        <?php endif; ?>
-                        <?php if( !empty($cases['link_3']) || !empty($cases['link_text']) ): ?>
-                            <a class="cases__more-link" href="<?php echo $cases['link_3'] ?>"><?php echo $cases['link_text'];?></a>
-                        <?php endif; ?>
+
+                        <div class="col-5 col-md-2 my-auto cases__content">
+                            <?php if( !empty($cases['title_3']) ): ?>
+                                <h2 class="cases__title"><?php echo $cases['title_3'] ?></h2>
+                            <?php endif; ?>
+                            <?php if( !empty($cases['link_3']) || !empty($cases['link_text']) ): ?>
+                                <a class="link" href="<?php echo $cases['link_3'] ?>"><?php echo $cases['link_text'];?><span>></span></a>
+                            <?php endif; ?>
                         </div>
                     </div>
+
                 </div>
             </section>
 
