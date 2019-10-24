@@ -1,0 +1,22 @@
+.about{
+    padding: $padding-large;
+    height: 100vh;
+
+    &__image img{
+        width: 100%;
+        min-width: 10rem;
+    }
+
+    &__text{
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    &__heading{
+        padding-bottom: 2rem;
+    }
+
+    &__paragraph{
+        padding-bottom: 2rem;
+    }
+}

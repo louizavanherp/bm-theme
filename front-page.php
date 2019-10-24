@@ -2,33 +2,33 @@
 
 
             <?php $intro = get_field('intro');?>
-            <section class="intro">
+            <section class="about">
                 <div class="container-fluid">
-                    <div class="row intro__content">
-                        <div class="intro__img col">
+                    <div class="row about__content">
+                        <div class="about__image col-12 col-md-6">
 
                             <?php 
 
                             if( !empty($intro['image']) ): ?>
 
-                                <img src="<?php echo $intro['image']['sizes']['medium']; ?>" alt="<?php echo $intro['image']['alt']; ?>" />
+                                <img src="<?php echo $intro['image'];?>" alt="<?php echo $intro['image']['alt']; ?>" />
+                               
 
                             <?php endif; ?>
 
                         </div>
 
-                        <div class="intro__copy col">
-                            <h1 class="intro__heading"><?php echo $intro['large_title']; ?></h1>
-                            <p class="intro__txt"><?php echo $intro['main_text']; ?></p>
-                            <?php if( !empty($intro['signature']) ): ?>
-                            <img src="<?php echo $intro['signature']['sizes']['thumbnail']; ?>" alt="<?php echo $intro['signatre']['alt']; ?>" />
-                            <?php endif; ?>
+                        <div class="about__text col-12 col-md-6 my-auto">
+                            <h1 class="about__heading"><?php echo $intro['large_title']; ?></h1>
+                            <p class="about__paragraph paragraph"><?php echo $intro['main_text']; ?></p>
+                            <a class="btn btn--outline" href="<?php echo $intro['cta_button_link'] ?>"><?php echo $intro['cta_button_text'];?></a>
                         </div>
                     </div>
                     
-                    <div class="intro__read-more">
-                    <a class="intro__read-more-link" href="<?php echo $intro['read_more_link'] ?>"><?php echo $intro['read_more_link_text'];?></a>
-                    <div class="outer"><div class="inner"></div></div>
+                    <div class="read-more">
+                    <a class="read-more__link read-more__link--start" href="<?php echo $intro['read_more_link'] ?>"><?php echo $intro['read_more_link_text'];?></a>
+                    <div class="read-more__outer read-more__outer--start"><div class="read-more__inner"></div></div>
+                    
                     </div>
                 </div>
             </section>
@@ -41,23 +41,23 @@
                     <div class="row services__content">
                         <div class="col mr-5">
                             <h2><?php echo $services['subtitle_1']; ?></h2>
-                            <?php echo $services['subtext_1']; ?>
+                            <p><?php echo $services['subtext_1']; ?></p>
                         </div>
 
                         <div class="col mr-5">
                             <h2><?php echo $services['subtitle_2']; ?></h2>
-                            <?php echo $services['subtext_2']; ?>
+                            <p><?php echo $services['subtext_2']; ?></p>
                         </div>
 
                         <div class="col mr-5">
                             <h2><?php echo $services['subtitle_3']; ?></h2>
-                            <?php echo $services['subtext_3']; ?>
+                            <p><?php echo $services['subtext_3']; ?></p>
                         </div>
 
                         <div class="col box">
                             <h2><?php echo $services['subtitle_4']; ?></h2>
-                            <?php echo $services['subtext_4']; ?>
-                            <br><?php echo $services['subtext_4_cta']; ?>
+                            <p><?php echo $services['subtext_4']; ?>
+                            <br><?php echo $services['subtext_4_cta']; ?></p>
                         </div>
 
                     </div>
