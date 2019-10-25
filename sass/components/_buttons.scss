@@ -1,3 +1,12 @@
+a{
+  color: $color-black;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+    color: $color-grey-dark;
+  }
+}
 /***** LINE LINK *****/
 .read-more {
   position: absolute;
@@ -13,12 +22,11 @@
     font-weight: 400;
     font-size: 1.2rem;
     display: inline-block;
-    transition: all .2s;
+    transition: all 0.2s;
     backface-visibility: hidden;
 
     &:hover {
       color: $color-black;
-      text-decoration: none;
       transform: scale(1.1);
     }
   }
@@ -51,30 +59,40 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-size: 1.2rem;
+}
 
+.btn--outline {
   &:hover {
     background-color: $color-black;
     color: $color-grey-light;
   }
 }
 
-/***** LINK *****/ 
-.link{
+.btn--fill{
+  background-color: $color-black;
+  color: $color-grey-light;
+
+  &:hover{
+    background: none;
+    color: $color-black;
+  }
+}
+
+/***** LINK *****/
+.link {
   text-transform: uppercase;
   color: $color-black;
   font-family: "Poppins", "sans-serif";
   font-size: 1.5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-weight: 500;
 
-  span{
+  span {
     margin-left: 1rem;
     font-weight: 700;
   }
-  
-  &:hover{
-    color: $color-grey-dark;
-    text-decoration: none;
+
+  &:hover {
     font-size: 1.5rem;
   }
 }

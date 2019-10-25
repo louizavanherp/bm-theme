@@ -1,11 +1,19 @@
 .about{
-    padding: $padding-large;
+    height: 100vh;
 
+    padding: $padding-large;
     @include respond(tab-land){
         padding: $padding-medium;
     }
 
-    height: 100vh;
+    .container-fluid{
+        @include respond(tab-land){
+            padding-top: 5rem;
+        }
+        @include respond(tab-port){
+            padding-top: 0;
+        }
+    }
 
     &__image img{
         width: 100%;

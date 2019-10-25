@@ -1,0 +1,35 @@
+.omargo{
+    padding: $padding-large;
+    @include respond(tab-land) {
+      padding: $padding-medium;
+      
+    }
+
+    padding-bottom: 30rem;
+    @include respond(tab-land){
+        padding-bottom: 20rem;
+    }
+
+
+    background-color: $color-grey-light;
+
+    &__image {
+        text-align: center;
+        & img{
+            width: 100%;
+            max-width: 30rem; 
+        } 
+    }
+
+    &__text{
+        padding-left: 10%;
+
+        h1, h2, p{
+            padding-bottom: 2rem;
+        }
+
+        p{
+            width: 85%;
+        }
+    }
+}

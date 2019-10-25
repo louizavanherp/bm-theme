@@ -4,6 +4,11 @@
     padding: $padding-medium;
   }
 
+  margin-top: -20rem;
+  @include respond(tab-port) {
+    margin-top: 0;
+  }
+
   &__case {
     @include respond(tab-port) {
       margin-top: 5rem;

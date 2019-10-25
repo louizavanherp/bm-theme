@@ -2,7 +2,7 @@
 
 
             <?php $intro = get_field('intro');?>
-            <section class="about">
+            <section class="about" id=about>
                 <div class="container-fluid">
                     <div class="row about__content">
                         <div class="about__image col-12 col-md-6">
@@ -67,8 +67,33 @@
                 </div>
             </section>
 
+            <?php $omargo = get_field('o-margo');?>
+            <section class="omargo" id="omagro">
+                <div class="container-fluid">
+                    <div class="row omargo__content">
+
+                        <div class="omargo__text col-12 col-md-6">
+                            <h1 class="heading-primary"><?php echo $omargo['title']; ?></h1>
+                            <h2 clas="heading-secondary"><?php echo $omargo['subtitle']; ?></h2>
+                            <p><?php echo $omargo['text']; ?></p>
+                            <a class="btn btn--fill" href="<?php echo  $omargo['button'] ?>"><?php echo  $omargo['button_text'] ?></a>
+                        </div>
+
+                        <div class="omargo__image col-12 col-md-6">
+
+                            <?php if( !empty($omargo['image']) ): ?>
+
+                                <img src="<?php echo $omargo['image'];?>" alt="<?php echo $omargo['image']['alt']; ?>" />
+
+                            <?php endif; ?>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <?php $cases = get_field('cases');?>
-            <section class="cases">
+            <section class="cases" id='cases'>
                 <div class="container-fluid">
                     <div class="row cases__case">
                         <div class="col-8 col-md-5 col-lg-4 my-auto">
@@ -144,7 +169,7 @@
             </section>
 
             <?php $quotes = get_field('quotes');?>
-            <section class="testimonials">
+            <section class="testimonials" id="testimonials">
                 <div class="row justify-content-center">
 
                     <input type="radio" id="i1" name="quotes" checked />
@@ -215,6 +240,70 @@
                         </label>
 
 
+                    </div>
+                </div>
+            </section>
+
+            <?php $contact = get_field('contact'); ?>
+            <section class="contact">
+                <div class="container-fluid">
+                    <div class="row contact__content">
+                        <div class="col-12 col-md-6 contact__data">
+                            <div class="contact__card mx-auto">
+                                <h1 class="heading-primary"><?php echo $contact['titel'];?></h1>
+                                <div class="contact__links">
+                                    
+                                    <a href="<?php echo $contact['link_mail'] ?>" class="contact__mail">
+                                        <div class="contact__icon">
+                                            <?php if( !empty($contact['icon_mail']) ): ?>
+                                            <img src="<?php echo $contact['icon_mail'] ?>" alt="<?php echo $contact['icon_mail'] ?>" />
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="contact__txt">
+                                            <?php echo $contact['mail']; ?>
+                                        </div>
+                                    </a>
+
+                                    <a href="<?php echo $contact['link_tel'] ?>" class="contact__tel">
+                                        <div class="contact__icon">
+                                            <?php if( !empty($contact['icon_tel']) ): ?>
+                                            <img src="<?php echo $contact['icon_tel'] ?>" alt="<?php echo $contact['icon_tel'] ?>" />
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="contact__txt">
+                                            <?php echo $contact['tel']; ?>
+                                        </div>
+                                    </a>
+
+                                    <a href="<?php echo $contact['lihnk_insta'] ?>" class="contact__insta">
+                                        <div class="contact__icon">
+                                            <?php if( !empty($contact['icon_insta']) ): ?>
+                                            <img src="<?php echo $contact['icon_insta'] ?>" alt="<?php echo $contact['icon_insta'] ?>" />
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="contact__txt">
+                                            <?php echo $contact['insta']; ?>
+                                        </div>
+                                    </a>
+
+                                    <a href="<?php echo $contact['link_facebook'] ?>" class="contact__facebook">
+                                        <div class="contact__icon">
+                                            <?php if( !empty($contact['icon_facebook']) ): ?>
+                                            <img src="<?php echo $contact['icon_facebook'] ?>" alt="<?php echo $contact['icon_facebook'] ?>" />
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="contact__txt">
+                                            <?php echo $contact['facebook']; ?>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form mx-auto mx-md-0">
+                                <?php echo $contact['contact_form']; ?>
+                             </div>
+                        </div>
                     </div>
                 </div>
             </section>

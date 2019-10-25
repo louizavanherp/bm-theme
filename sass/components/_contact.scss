@@ -1,0 +1,39 @@
+.contact{
+    padding: $padding-large;
+    @include respond(tab-land) {
+      padding: $padding-medium;
+    }
+    
+    &__card{
+        background-color: $color-grey-light;
+        width: 40rem;
+        padding: 9rem 7rem;
+    }
+
+    &__links{
+        padding-top: 3rem;
+
+        &>*:not(:last-child){
+            margin-bottom: 2rem;
+            display: block;
+        }
+    }
+
+    &__icon, &__txt{
+        display:inline-block;
+    }
+
+    &__icon img{
+        width: 2.5rem;
+    }
+
+    &__mail &__icon img{
+        width: 2rem;
+    }
+
+    &__txt{
+        font-size: 1.4rem;
+        padding-left: 2rem;
+    }
+
+}
