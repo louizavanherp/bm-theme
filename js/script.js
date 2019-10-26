@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     var heightHeader = 100;
 
     /************* scroll links *************/
@@ -16,8 +17,21 @@ $(document).ready(function () {
             });
         }
     });
+    /************** form labels ******************/
+
+    $("form input, form textarea").keyup(function () {
+        var $field = $(this).closest("p");
+        if (this.value) {
+            $field.addClass("filled");
+        } else {
+            $field.removeClass("filled");
+        }
+    });
+
+    var $subject = $('option[value="SUBJECT*"]');
+    $subject.attr("selected", true);
+    $subject.attr("disabled", true);
 
 
-
-/*END OF SCRIPT */
+    /*END OF SCRIPT */
 });

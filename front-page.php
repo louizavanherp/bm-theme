@@ -250,52 +250,54 @@
                     <div class="row contact__content">
                         <div class="col-12 col-md-6 contact__data">
                             <div class="contact__card mx-auto">
-                                <h1 class="heading-primary"><?php echo $contact['titel'];?></h1>
-                                <div class="contact__links">
-                                    
-                                    <a href="<?php echo $contact['link_mail'] ?>" class="contact__mail">
-                                        <div class="contact__icon">
-                                            <?php if( !empty($contact['icon_mail']) ): ?>
-                                            <img src="<?php echo $contact['icon_mail'] ?>" alt="<?php echo $contact['icon_mail'] ?>" />
-                                            <?php endif; ?>
-                                        </div>
-                                        <div class="contact__txt">
-                                            <?php echo $contact['mail']; ?>
-                                        </div>
-                                    </a>
+                                <div class="background">
+                                    <h1 class="heading-primary"><?php echo $contact['titel'];?></h1>
+                                    <div class="contact__links">
+                                        
+                                        <a href="<?php echo $contact['link_mail'] ?>" class="contact__mail">
+                                            <div class="contact__icon">
+                                                <?php if( !empty($contact['icon_mail']) ): ?>
+                                                <img src="<?php echo $contact['icon_mail'] ?>" alt="<?php echo $contact['icon_mail'] ?>" />
+                                                <?php endif; ?>
+                                            </div>
+                                            <div class="contact__txt">
+                                                <?php echo $contact['mail']; ?>
+                                            </div>
+                                        </a>
 
-                                    <a href="<?php echo $contact['link_tel'] ?>" class="contact__tel">
-                                        <div class="contact__icon">
-                                            <?php if( !empty($contact['icon_tel']) ): ?>
-                                            <img src="<?php echo $contact['icon_tel'] ?>" alt="<?php echo $contact['icon_tel'] ?>" />
-                                            <?php endif; ?>
-                                        </div>
-                                        <div class="contact__txt">
-                                            <?php echo $contact['tel']; ?>
-                                        </div>
-                                    </a>
+                                        <a href="<?php echo $contact['link_tel'] ?>" class="contact__tel">
+                                            <div class="contact__icon">
+                                                <?php if( !empty($contact['icon_tel']) ): ?>
+                                                <img src="<?php echo $contact['icon_tel'] ?>" alt="<?php echo $contact['icon_tel'] ?>" />
+                                                <?php endif; ?>
+                                            </div>
+                                            <div class="contact__txt">
+                                                <?php echo $contact['tel']; ?>
+                                            </div>
+                                        </a>
 
-                                    <a href="<?php echo $contact['lihnk_insta'] ?>" class="contact__insta">
-                                        <div class="contact__icon">
-                                            <?php if( !empty($contact['icon_insta']) ): ?>
-                                            <img src="<?php echo $contact['icon_insta'] ?>" alt="<?php echo $contact['icon_insta'] ?>" />
-                                            <?php endif; ?>
-                                        </div>
-                                        <div class="contact__txt">
-                                            <?php echo $contact['insta']; ?>
-                                        </div>
-                                    </a>
+                                        <a href="<?php echo $contact['lihnk_insta'] ?>" class="contact__insta">
+                                            <div class="contact__icon">
+                                                <?php if( !empty($contact['icon_insta']) ): ?>
+                                                <img src="<?php echo $contact['icon_insta'] ?>" alt="<?php echo $contact['icon_insta'] ?>" />
+                                                <?php endif; ?>
+                                            </div>
+                                            <div class="contact__txt">
+                                                <?php echo $contact['insta']; ?>
+                                            </div>
+                                        </a>
 
-                                    <a href="<?php echo $contact['link_facebook'] ?>" class="contact__facebook">
-                                        <div class="contact__icon">
-                                            <?php if( !empty($contact['icon_facebook']) ): ?>
-                                            <img src="<?php echo $contact['icon_facebook'] ?>" alt="<?php echo $contact['icon_facebook'] ?>" />
-                                            <?php endif; ?>
-                                        </div>
-                                        <div class="contact__txt">
-                                            <?php echo $contact['facebook']; ?>
-                                        </div>
-                                    </a>
+                                        <a href="<?php echo $contact['link_facebook'] ?>" class="contact__facebook">
+                                            <div class="contact__icon">
+                                                <?php if( !empty($contact['icon_facebook']) ): ?>
+                                                <img src="<?php echo $contact['icon_facebook'] ?>" alt="<?php echo $contact['icon_facebook'] ?>" />
+                                                <?php endif; ?>
+                                            </div>
+                                            <div class="contact__txt">
+                                                <?php echo $contact['facebook']; ?>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
