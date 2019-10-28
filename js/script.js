@@ -32,6 +32,16 @@ $(document).ready(function () {
     $subject.attr("selected", true);
     $subject.attr("disabled", true);
 
+    /****************** navigation *******************/
+    var $navbarItems = $(".navbar ul li").not('.navbar ul li:first');
+    var $navbarLocation = $(".navbar ul");
+
+    $navbarLocation.append("<div class='nav-items'></div>");
+    $navbarItemsGroup = $(".nav-items");
+    $navbarItemsGroup.append($navbarItems);
+
+
+
 
     /*END OF SCRIPT */
 });

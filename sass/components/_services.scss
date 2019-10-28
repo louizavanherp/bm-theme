@@ -1,5 +1,8 @@
 .services{
-    padding:$padding-large;
+    padding:$padding-xlarge;
+    @include respond(big-desktop){ /* max width 1200px */        
+        padding: $padding-medium;
+    }
     padding-top: 5rem;
 
     &__service{
@@ -8,6 +11,13 @@
 
         &:not(:last-child){
             padding-right: 8rem;
+            @include respond(large-desktop){ /* max width 1500px */        
+               padding-right: 2rem;
+            }
+
+            @include respond(tab-land){ /* max width 992px */        
+                padding-right: 8rem;
+             }
         }
         
         p{

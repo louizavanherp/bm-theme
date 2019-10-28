@@ -1,5 +1,9 @@
 .form {
-  width: 40rem;
+  // width: 49rem;
+
+  form{
+    margin-left:9rem;
+  }
 
   form input:not(.form__field--submit),
   form label,

@@ -1,12 +1,11 @@
 .contact{
-
     padding: $padding-large;
     @include respond(tab-land) {
       padding: $padding-medium;
     }
     
     &__card{
-        width: 40rem;
+        // width: 40rem;
     }
 
     .background{

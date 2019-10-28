@@ -68,7 +68,7 @@
             </section>
 
             <?php $omargo = get_field('o-margo');?>
-            <section class="omargo" id="omagro">
+            <section class="omargo" id="omargo">
                 <div class="container-fluid">
                     <div class="row omargo__content">
 
@@ -245,7 +245,7 @@
             </section>
 
             <?php $contact = get_field('contact'); ?>
-            <section class="contact">
+            <section class="contact" id="contact">
                 <div class="container-fluid">
                     <div class="row contact__content">
                         <div class="col-12 col-md-6 contact__data">
