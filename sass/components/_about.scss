@@ -1,6 +1,8 @@
 .about{
     height: 100vh;
-
+    display: flex;
+    align-items: center;
+    
     padding: $padding-large;
     @include respond(tab-land){
         padding: $padding-medium;
