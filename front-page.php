@@ -21,7 +21,7 @@
                         <div class="about__text col-12 col-md-6 my-auto">
                             <h1 class="heading-primary about__heading"><?php echo $intro['large_title']; ?></h1>
                             <p class="about__paragraph paragraph"><?php echo $intro['main_text']; ?></p>
-                            <a class="btn btn--outline" href="<?php echo $intro['cta_button_link'] ?>"><?php echo $intro['cta_button_text'];?></a>
+                            <a class="btn btn--fill" href="<?php echo $intro['cta_button_link'] ?>"><?php echo $intro['cta_button_text'];?></a>
                         </div>
                     </div>
                     
